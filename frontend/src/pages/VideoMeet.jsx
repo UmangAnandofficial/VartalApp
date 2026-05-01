@@ -87,10 +87,10 @@ export default function VideoMeetComponent() {
     // }
 
     useEffect(() => {
-        console.log("HELLO")
-        getPermissions();
+    console.log("HELLO")
+    getPermissions();
 
-    })
+}, []) // ← Empty array means: run ONCE when component mounts
 
     let getDislayMedia = () => {
         if (screen) {
